@@ -1,0 +1,92 @@
+/* indeㅌ 페이지 */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 10px;
+}
+
+.navbar a {
+    color: #4285F4;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    text-align: center;
+}
+
+.search-box {
+    width: 480px;
+    height: 44px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 22px;
+    box-shadow: none;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    border: 1px solid #c6c6c6;
+}
+
+/* login 페이지 */
+.container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login button {
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    cursor: pointer;
+}
+
+.kakao {
+    background-color: #FEE500;
+}
+
+.google {
+    background-color: #DB4437;
+    color: white;
+}
+
+.naver {
+    background-color: #03C75A;
+    color: white;
+}
