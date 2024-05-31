@@ -4,17 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link href="css/styles.css" rel="stylesheet"/>
-    <style></style>
+    <!-- Bootstrap (css편의성) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Googlefont(웹폰트) -->
+        <!-- Noto Sans KR(한글) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+        <!-- Comfortaa(영어) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    
+
+    <!-- font awesome(아이콘) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-optical-sizing: auto;
+            /* font-family: 'Comfortaa', sans-serif; */
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #AA8967;
+            margin: 0;
+        }
+        .eng{
+            font-family: 'Comfortaa', sans-serif;
+            font-optical-sizing: auto;
+        }
+        .navbar {
+            flex-shrink: 0;
+            background-color: #FEA645
+        }
+        .navbar-brand img {
+            height: 40px; /* 네비게이션 바에 맞춘 로고 이미지 높이 설정 */
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .footer {
+            background-color: #554F49; 
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            flex-shrink: 0;
+        }
+        /* 네비게이션 로고 옆 폰트 */
+        .logo_font_nav {
+            font-size: 110%;
+            font-weight: 700;
+            vertical-align: bottom;
+            margin-left: 5px;
+        }
+        /* 메인 로고 옆 폰트 */
+        .logo_font_main {
+            font-size: 200%;
+            font-weight: 700;
+            vertical-align: bottom;
+            margin-left: 5px;
+        }
+        .logo img{
+            height: 60px;
+        }
+        /* 검색창 */
+        .my-search{
+            max-width: 600px; 
+            margin-top: 20px;
+        }
+        .my-searchbar{  
+            padding-top: 25px; /* 위 여백 설정 */
+            padding-bottom: 25px; /* 아래 여백 설정 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* 약한 그림자 추가 */
+            border: none; /* 기본 테두리 제거 */
+        }
+        /* 검색아이콘 */
+        .search-container .search-icon{
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            border: none;
+        }
+        
+    </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="login.html">로그인</a>
-        <a href="login.html">회원가입</a>
-    </div>
-    <div class="search-container">
-        <h1>쳐 먹어요!</h1>
-        <input type="text" class="search-box" placeholder="식당이름">
-    </div>
+    <!-- 네비게이션 바 시작 -->
+    <header class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- 로고를 가운데 정렬하기 위한 빈 div 추가 -->
+            <div class="d-flex justify-content-center align-items-center mr-auto">
+                <a class="navbar-brand" href="#" >
+                    <img src="images/logo-removebg.png" alt="로고">
+                    <span class="logo_font_nav eng">
+                        Eat Yo
+                    </span>
+                </a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login.html">로그인 | 회원가입</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 네비게이션 바 끝 -->
+
+    <!-- 메인 시작 -->
+    <main class="main-content">
+        <div class="logo">
+            <img src="images/logo-removebg.png" alt="로고" class="img-fluid">
+            <span class="logo_font_main eng">Eat Yo</span>
+        </div>
+        <div class="input-group search-container w-100 my-search">
+            <div class="input-group-prepend">
+                <span class="input-group-text border-0 search-icon">
+                    <i class="fas fa-search text-muted"></i>
+                </span>
+            </div>
+            <input type="text" class="form-control my-searchbar" placeholder="식당을 검색해보세요.">
+          </div>
+    </main> 
+    <!-- 메인 끝 -->
+
+    <!-- 푸터 시작 -->
+    <footer class="footer">
+        <div class="container">
+            <p>푸터 영역</p>
+        </div>
+    </footer>
+    <!-- 푸터 끝 -->
+
+    <!-- 부트스트랩 JS 및 종속성 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
