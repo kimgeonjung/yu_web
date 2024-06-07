@@ -4,71 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign_up</title>
+    <!-- 회원가입 페이지 -->
     <!-- Bootstrap CSS 링크 -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Google Font (웹폰트) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
 
     <!-- Font Awesome (아이콘) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-    <style>
-        html, body {
-            height: 100%;
-            font-family: 'Noto Sans KR', sans-serif;
-            font-optical-sizing: auto;
-        }
-        body {
-            display: flex;
-            flex-direction: column;
-            background-color: #AA8967;
-            margin: 0;
-        }
-        .eng {
-            font-family: 'Comfortaa', sans-serif;
-            font-optical-sizing: auto;
-        }
-         /* 메인 로고 옆 폰트 */
-         .logo_font_main {
-            font-size: 200%;
-            font-weight: 700;
-            vertical-align: bottom;
-            margin-left: 5px;
-        }
-        .logo img{
-            height: 60px;
-        }
-        .main-content {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .footer {
-            background-color: #554F49;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            flex-shrink: 0;
-        }
-        
-        .login-container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
-        }
-        .form-control {
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
 <body>
     <!-- 네비게이션 바 시작 -->
@@ -113,7 +57,13 @@
     <!-- 푸터 시작 -->
     <footer class="footer">
         <div class="container">
-            <p>푸터 영역</p>
+            <form>
+                <div class="row justify-content-end">
+                    <a href="https://github.com/kimgeonjung/yu_web" target="_blank" class="mx-2">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </div>
+            </form> 
         </div>
     </footer>
     <!-- 푸터 끝 -->

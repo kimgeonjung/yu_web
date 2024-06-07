@@ -1,92 +1,127 @@
-/* indeㅌ 페이지 */
-body, html {
+/* Noto Sans KR 및 Comfortaa 웹 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+html, body {
     height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-optical-sizing: auto;
+    margin: 0; 
+}
+
+body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f8f9fa;
+    flex-direction: column;
+    background-color: #AA8967; 
+}
+
+.eng {
+    font-family: 'Comfortaa', sans-serif;
+    font-optical-sizing: auto; 
 }
 
 .navbar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 8px 10px;
+    flex-shrink: 0;
+    background-color: #FEA645; 
 }
 
-.navbar a {
-    color: #4285F4;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 5px 10px;
-    margin: 0 5px;
+.navbar-brand img {
+    height: 40px; /* 네비게이션 바에 맞춘 로고 이미지 높이 설정 */
 }
 
-.navbar a:hover {
-    text-decoration: underline;
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
 }
 
-.search-container {
+.footer {
+    background-color: #554F49; 
+    color: #fff;
     text-align: center;
+    padding: 20px 0;
+    flex-shrink: 0; 
 }
 
-.search-box {
-    width: 480px;
-    height: 44px;
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 16px;
-    border: 1px solid #dfe1e5;
-    border-radius: 22px;
-    box-shadow: none;
-    outline: none;
+/* 네비게이션 로고 옆 폰트 */
+.logo_font_nav {
+    font-size: 110%;
+    font-weight: 700;
+    vertical-align: bottom;
+    margin-left: 5px; 
 }
 
-.search-button {
-    padding: 10px 20px;
-    margin-top: 20px;
-    margin-right: 10px;
-    font-size: 14px;
-    border: 1px solid #f8f9fa;
-    border-radius: 4px;
-    background-color: #f8f9fa;
-    cursor: pointer;
+/* 메인 로고 옆 폰트 */
+.logo_font_main {
+    font-size: 200%;
+    font-weight: 700;
+    vertical-align: bottom;
+    margin-left: 5px; 
 }
 
-.search-button:hover {
-    border: 1px solid #c6c6c6;
+.logo img {
+    height: 60px; 
 }
 
-/* login 페이지 */
-.container {
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
+/* 검색창 */
+.my-search {
+    max-width: 600px;
+    margin-top: 20px; 
 }
 
-.social-login {
-    margin-top: 20px;
+.my-searchbar {  
+    padding-top: 25px; /* 위 여백 설정 */
+    padding-bottom: 25px; /* 아래 여백 설정 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* 약한 그림자 추가 */
+    border: none; /* 기본 테두리 제거 */
 }
 
-.social-login button {
-    margin: 10px;
-    padding: 10px;
-    width: 90%;
-    cursor: pointer;
+.search-container .search-icon {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border: none;
 }
 
-.kakao {
-    background-color: #FEE500;
+a {
+    color: inherit; /* 부모 요소의 색상을 상속받음 */
+    text-decoration: none; /* 밑줄 제거 */
 }
 
-.google {
-    background-color: #DB4437;
-    color: white;
+a:hover {
+    color: inherit; /* 마우스 오버시에도 부모 요소의 색상을 상속받음 */
 }
 
-.naver {
-    background-color: #03C75A;
-    color: white;
+/* 로그인 페이지 */
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+.menu-left{
+    text-align: start;
+}
+.menu-img{
+    width: 120px;
+    height: 120px;
+}
+.custom-list-item {
+    background-color: inherit; /* 원하는 배경색으로 변경 */
+    border-color: burlywood; 
+    border-style: dashed;
+    border-left: none;
+    border-right: none;
+}
+.custom-people-icon{
+    width: 3.5rem;
+    height: 3.5rem;
 }
