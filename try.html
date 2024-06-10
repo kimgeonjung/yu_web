@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi</title>
+    <!-- Bootstrap (css편의성) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Googlefont(웹폰트) -->
+        <!-- Noto Sans KR(한글) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+        <!-- Comfortaa(영어) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    
+
+    <!-- font awesome(아이콘) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- css 가져옴-->
+    <link rel="stylesheet" type="text/css" href="search_style.css">
+</head>
+<body>
+    <!-- 네비게이션 바 시작 -->
+    <header class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- 로고를 가운데 정렬하기 위한 빈 div 추가 -->
+            <div class="d-flex justify-content-center align-items-center mr-auto">
+                <a class="navbar-brand" href="#" >
+                    <img src="images\Eat_Logo.png" alt="로고">
+                    <span class="logo_font_nav eng">
+                    </span>
+                </a>
+            </div>
+            <!-- 서치바-->
+            <div class="input-group search-container w-100 my-search">
+                <div class="input-group-prepend">
+                    <span class="input-group-text border-0 search-icon">
+                        <i class="fas fa-search text-muted"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control my-searchbar" placeholder="식당을 검색해보세요.">
+              </div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 로그인 회원가입 버튼-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login.html">로그인</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sign_up.html">회원가입</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 네비게이션 바 끝 -->
+
+    <!--메인 결과 창-->
+    <div class="MainBody">
+        <div class="header">
+            <!--정렬바 시작-->
+            <div class="sorting">
+                <div class="Left">
+                    <span>
+                        <img src="https://dcicons.s3.ap-northeast-1.amazonaws.com/new/images/web/react_components/Order/order.png" alt="정렬 필터 이미지">
+                    </span>
+                </div>
+                <div class="soritng_list">
+                    <button aria-label="order by r_score" class="Selected"><span>연관순</span></button>
+                    <button aria-label="order by r_rate" class=""><span>평점순</span></button>
+                    <button aria-label="order by r_count" class=""><span>리뷰많은순</span></button>
+                    <button aria-label="order by l_count" class=""><span>좋아요많은순</span></button>
+                </div>
+            </div>
+            <!--정렬바 끝-->
+        </div>
+
+    <!--검색 목록-->
+    <section class="list">
+        <ul>
+            <li class="item">
+                <a href="https://www.kyochon.com/main/">
+                <img src="images\gyochon.jpg" alt="">
+                <div class="info">
+                    <span class="storeName">교촌 치킨</span>
+                    <span class="point">4.3</span>
+                    <span class="type">치킨</span>
+                    <span class="reviews">"굿"</span>
+                </div>
+            </a>
+            </li>
+            <li class="item">
+                <a href="https://www.bhc.co.kr/">
+                <img src="images\bhc.png" alt="">
+                <div class="info">
+                    <span class="storeName">BHC 치킨</span>
+                    <span class="point">4.2</span>
+                    <span class="type">치킨</span>
+                    <span class="reviews">"뿌링클 맛집"</span>
+                </div>
+            </a>
+            </li>
+            <li class="item">
+                <a href="https://www.goobne.co.kr/">
+                <img src="images\gubnea.png" alt="">
+                <div class="info">
+                    <span class="storeName">굽네 치킨</span>
+                    <span class="point">4.5</span>
+                    <span class="type">치킨</span>
+                    <span class="reviews">"굽네 미만 잡"</span>
+                </div>
+            </a>
+            </li>
+            <li class="item">
+                <a href="https://www.pncg.co.kr/">
+                <img src="images\pizza_chichen.png" alt="">
+                <div class="info">
+                    <span class="storeName">피자나라 치킨공주</span>
+                    <span class="point">4.2</span>
+                    <span class="type">치킨, 피자</span>
+                    <span class="reviews">"가성비 맛집"</span>
+                </div>
+            </a>
+            </li>
+            <li class="item">
+                <a href="https://bbq.co.kr/">
+                <img src="images\bbq.png" alt="">
+                <div class="info">
+                    <span class="storeName">BBQ 치킨</span>
+                    <span class="point">4.6</span>
+                    <span class="type">치킨</span>
+                    <span class="reviews">"황올 맛집"</span>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </section>
+</div>
+</body>
