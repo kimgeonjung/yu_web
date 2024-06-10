@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <!-- 상세 / 예약 페이지 -->
+    <!-- 최신 Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 최신 jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- 최신 jQuery Timepicker CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.13.18/jquery.timepicker.min.css">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/reservation_css.css" rel="stylesheet">
+    <!-- 최신 Font Awesome (아이콘) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+
+    </head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+            <!-- 로고를 가운데 정렬하기 위한 빈 div 추가 -->
+            <div class="d-flex justify-content-center align-items-center mr-auto">
+                <a class="navbar-brand" href="index.html" >
+                    <img src="images/logo-removebg.png" alt="로고">
+                    <span class="logo_font_nav eng">
+                        Eat Yo
+                    </span>
+                </a>
+            </div>
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login.html">로그인</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign_up.html">회원가입</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+  <!-- 네비게이션 바 끝 -->
+
+<!-- 메인 시작 -->
+<main class="main-content"> <!--style="background-color: #f9e0c8;"-->
+    <div class="container">
+        <div class="row">
+            <!-- 식당 이미지들 -->
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/logo-removebg.png" alt="식당 이미지" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="images/logo-removebg.png" alt="식당 이미지" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="images/logo-removebg.png" alt="식당 이미지" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="images/logo-removebg.png" alt="식당 이미지" class="img-fluid">
+                </div>
+                <!-- 추가적인 이미지들을 동일한 방식으로 추가 -->
+            </div>
+            <!-- 식당 정보 8:4 비율중 8 -->
+            <div class="col-md-8">
+                <!-- 식당 상세 정보 -->
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-between align-items-center my-2">
+                            <h2>스타벅스 죽전점</h2>
+                            <button class="btn btn-outline-danger ml-auto"><i class="fas fa-heart"></i></button>
+                        </div>
+                        <div class="d-flex justify-content-start menu-left">
+                            <div>
+                                <p><i class="fas fa-map-marker-alt"> 경기 용인시 수지구 현암로 140</i></p> 
+                                <p><i class="fas fa-utensils"> 카페</i></p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p><i class="fas fa-bell"> 07:30 ~ 21:00</i></p>
+                            <p><i class="fas fa-star"> 4.5 / 5.0</i></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 식당 상세 정보 끝 -->
+                
+                <!-- 식당 메뉴 -->
+                <ul class="list-group">
+                    <h3 class="my-4">메뉴</h3>
+                    <li class="list-group-item custom-list-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/logo-removebg.png" alt="메뉴 이미지" class="img-fluid" style="width: 120px; height: 120px;">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="menu-left">
+                                    <h5>감자튀김</h5>
+                                    <p>내가 지금 만들고 있는데 감자 튀김이 먹고싶다 이거야. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item custom-list-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/logo-removebg.png" alt="메뉴 이미지" class="img-fluid" style="width: 120px; height: 120px;">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="menu-left">
+                                    <h5>감자튀김</h5>
+                                    <p>내가 지금 만들고 있는데 감자 튀김이 먹고싶다 이거야. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item custom-list-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/logo-removebg.png" alt="메뉴 이미지" class="img-fluid" style="width: 120px; height: 120px;">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="menu-left">
+                                    <h5>감자튀김</h5>
+                                    <p>내가 지금 만들고 있는데 감자 튀김이 먹고싶다 이거야. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 식당 메뉴 끝 -->
+
+                <!-- 리뷰 -->
+                <ul class="list-group">
+                    <h3 class="my-4 ">리뷰</h3>
+                    <!-- 리뷰 하나 -->
+                    <li class="list-group-item custom-list-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="rounded-circle d-inline-block bg-secondary p-3 mt-2 custom-people-icon">
+                                    <i class="fas fa-user text-light"></i>
+                                </div> 
+                                <p><i class="fas fa-star"> 4.5 / 5.0</i></p>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="menu-left mt-2">
+                                    <h5>김건중</h5>
+                                    <p>진짜 배고프네 배고프다 으으 배고파 배고파</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 리뷰 둘 -->
+                    <li class="list-group-item custom-list-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="rounded-circle d-inline-block bg-secondary p-3 mt-2 custom-people-icon">
+                                    <i class="fas fa-user text-light"></i>
+                                </div> 
+                                <p><i class="fas fa-star"> 4.5 / 5.0</i></p>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="menu-left mt-2">
+                                    <h5>유환일</h5>
+                                    <p>진짜 배고프네 배고프다 으으 배고파 배고파</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 예약 8:4 비율중 4 -->
+            <div class="col-md-4">
+                <div class="container mt-4">
+                    <!-- 캘린더, 시간, 인원 선택 기능 -->
+                    <div class="row justify-content-center align-items-center my-2 mx-0">
+                        <div class="col-md-12">
+                            <h2>예약</h2>
+                            <div class="card border-0">
+                                <!-- 예약 폼 -->
+                                <form autocomplete="off">
+                                    <div class="card-header bg-dark">
+                                        <div class="mx-0 mb-0 row justify-content-sm-center justify-content-start px-1">
+                                            <input type="text" id="dp1" class="datepicker" placeholder="날짜를 고르세요" name="date" readonly>
+                                            <span class="fa fa-calendar"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-3">
+                                        <div class="row text-center mx-0">
+                                            <div class="col-4 my-1 px-2"><div class="cell py-1">11:00</div></div>
+                                            <div class="col-4 my-1 px-2"><div class="cell py-1">11:15</div></div>
+                                            <div class="col-4 my-1 px-2"><div class="cell py-1">11:30</div></div>
+                                            <div class="col-4 my-1 px-2"><div class="cell py-1">11:45</div></div>
+                                            <div class="col-4 my-1 px-2"><div class="cell py-1">12:00</div></div>
+                                            <div class="col-4 my-1 px-2"><div class="cell py-1">12:15</div></div>
+                                        </div>
+                                        <div class="row text-center mx-0">
+                                            <div class="col-4 my-1 px-2"><div class="cell py-1">12:30</div></div>
+                                            <div class="col-4 my-1 px-2"><div class="cell py-1">12:45</div></div>
+                                            <div class="col-4 my-1 px-2"><div class="cell py-1">13:00</div></div>
+                                            <div class="col-4 my-1 px-2"><div class="cell py-1">13:15</div></div>
+                                            <div class="col-4 my-1 px-2"><div class="cell py-1">13:30</div></div>
+                                            <div class="col-4 my-1 px-2"><div class="cell py-1">13:45</div></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <select id="people" class="form-control">
+                                            <option selected>인원수</option readonly>
+                                            <option>2명</option>
+                                            <option>3명</option>
+                                            <option>4명</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn bg-dark custom-btn text-white mb-2">예약</button>
+                                </form>
+                                <!-- 예약폼 끝 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 예약 끝 -->
+        </div>
+    </div>
+</main> 
+<!-- 메인 끝 -->
+
+  <!-- 푸터 시작 -->
+<footer class="footer">
+    <div class="container">
+        <form>
+            <div class="row justify-content-end">
+                <a href="https://github.com/kimgeonjung/yu_web" target="_blank" class="mx-2">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </div>
+        </form> 
+    </div>
+</footer>
+<!-- 푸터 끝 -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+<!-- Bootstrap JS 및 종속성 -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/my-script.js"></script>
+</body>
+</html>
